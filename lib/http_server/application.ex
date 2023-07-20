@@ -10,6 +10,8 @@ defmodule HttpServer.Application do
     children = [
       # Starts a worker by calling: HttpServer.Worker.start_link(arg)
       # {HttpServer.Worker, arg}
+
+      {HttpServer.DumbServer, 8000}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
